@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Statystyki Koronawirusa</string>
+    <string name="cases">Przypadki</string>
+    <string name="deaths">Zgony</string>
+    <string name="recovered">Ozdrowieńcy</string>
+    <string name="active">Aktywne</string>
+    <string name="critical">Krytyczne</string>
+    <string name="current">Lokalne</string>
+    <string name="global">Globalne</string>
+    <string name="historical">Historyczne</string>
+    <string name="globe">Świat</string>
+    <string name="flag">Flaga</string>
+    <string name="info">Informacje</string>
+    <string name="date">Data</string>
+    <string name="continent">Kontynent</string>
+    <string name="country">Państwo</string>
+    <string name="show_historical">Pokaż dane historyczne</string>
+    <string name="hide_historical">Ukryj dane historyczne</string>
+    <string name="show_continents">Pokaż kontynenty</string>
+    <string name="hide_continents">Ukryj kontynenty</string>
+    <string name="show_detailed_data">Pokaż szczegółowe dane</string>
+    <string name="show_countries">Pokaż państwa</string>
+    <string name="hide_countries">Ukryj państwa</string>
+    <string name="refresh">Odśwież</string>
+    <string name="check_internet_connection">Sprawdź połączenie z internetem</string>
+    <string name="app_about">Dbaj o bezpieczeństwo i zdrowie,\n
+        często myj ręce,\n
+        zasłaniaj usta i nos!</string>
+    <string name="api_source">Źródło API</string>
+    <string name="change_country">Zmień państwo</string>
+    <string name="current_country">Obecne państwo:</string>
+    <string name="toast_changed_country">Państwo zostało zmienione</string>
+    <string name="updated">Zaktualizowano</string>
+    <string name="empty">Kraj nie posiada danych historycznych</string>
+</resources>

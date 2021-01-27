@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/current_stats_bottom">
+
+    <fragment
+        android:id="@+id/current_stats_bottom"
+        android:name="com.github.qxtno.coronastats.fragments.CurrentDataFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_current_data">
+        <action
+            android:id="@+id/action_current_stats_bottom_to_country_select"
+            app:destination="@id/country_select" />
+    </fragment>
+    <fragment
+        android:id="@+id/global_stats_bottom"
+        android:name="com.github.qxtno.coronastats.fragments.GlobalDataFragment"
+        android:label="@string/global"
+        tools:layout="@layout/fragment_global_data">
+        <action
+            android:id="@+id/action_global_stats_bottom_to_continent_stats"
+            app:destination="@id/continent_stats" />
+    </fragment>
+    <fragment
+        android:id="@+id/continent_stats"
+        android:name="com.github.qxtno.coronastats.fragments.ContinentDataFragment"
+        android:label="@string/continent"
+        tools:layout="@layout/fragment_continent_data">
+        <argument
+            android:name="continent"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_continent_stats_to_continent_country_data"
+            app:destination="@id/continent_country_data" />
+    </fragment>
+    <fragment
+        android:id="@+id/info_bottom"
+        android:name="com.github.qxtno.coronastats.fragments.InfoFragment"
+        android:label="@string/info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/country_select"
+        android:name="com.github.qxtno.coronastats.fragments.CountrySelectFragment"
+        android:label="@string/change_country"
+        tools:layout="@layout/fragment_country_select" />
+    <fragment
+        android:id="@+id/continent_country_data"
+        android:name="com.github.qxtno.coronastats.fragments.ContinentCountryDataFragment"
+        android:label="country"
+        tools:layout="@layout/fragment_continent_country_data">
+        <argument
+            android:name="country"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+</navigation>
